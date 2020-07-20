@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C45A53924C1E54F00776A4C /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C45A53824C1E54F00776A4C /* ArticleTableViewCell.swift */; };
+		6C45A53B24C20F8E00776A4C /* ClassExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C45A53A24C20F8E00776A4C /* ClassExtensions.swift */; };
+		6CA7470224C1AD8C0071B6FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7470124C1AD8C0071B6FE /* AppDelegate.swift */; };
+		6CA7470424C1AD8C0071B6FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7470324C1AD8C0071B6FE /* SceneDelegate.swift */; };
+		6CA7470624C1AD8C0071B6FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7470524C1AD8C0071B6FE /* ViewController.swift */; };
+		6CA7470924C1AD8C0071B6FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA7470724C1AD8C0071B6FE /* Main.storyboard */; };
+		6CA7470C24C1AD8C0071B6FE /* Mitesh_Practical.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7470A24C1AD8C0071B6FE /* Mitesh_Practical.xcdatamodeld */; };
+		6CA7470E24C1AD900071B6FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CA7470D24C1AD900071B6FE /* Assets.xcassets */; };
+		6CA7471124C1AD900071B6FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA7470F24C1AD900071B6FE /* LaunchScreen.storyboard */; };
+		6CA7471C24C1AD900071B6FE /* Mitesh_PracticalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7471B24C1AD900071B6FE /* Mitesh_PracticalTests.swift */; };
+		6CA7472724C1AD900071B6FE /* Mitesh_PracticalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7472624C1AD900071B6FE /* Mitesh_PracticalUITests.swift */; };
+		6CA7473524C1B8BA0071B6FE /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7473424C1B8BA0071B6FE /* ArticleViewModel.swift */; };
+		6CA7473624C1B8BA0071B6FE /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7473424C1B8BA0071B6FE /* ArticleViewModel.swift */; };
+		6CA7473724C1B8BA0071B6FE /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7473424C1B8BA0071B6FE /* ArticleViewModel.swift */; };
+		6CA7473E24C1BF330071B6FE /* Article+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7473824C1BF330071B6FE /* Article+CoreDataClass.swift */; };
+		6CA7473F24C1BF330071B6FE /* Article+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7473824C1BF330071B6FE /* Article+CoreDataClass.swift */; };
+		6CA7474024C1BF330071B6FE /* Article+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7473824C1BF330071B6FE /* Article+CoreDataClass.swift */; };
+		6CA7474124C1BF330071B6FE /* Article+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7473924C1BF330071B6FE /* Article+CoreDataProperties.swift */; };
+		6CA7474224C1BF330071B6FE /* Article+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7473924C1BF330071B6FE /* Article+CoreDataProperties.swift */; };
+		6CA7474324C1BF330071B6FE /* Article+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7473924C1BF330071B6FE /* Article+CoreDataProperties.swift */; };
+		6CA7474424C1BF330071B6FE /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7473A24C1BF330071B6FE /* User+CoreDataClass.swift */; };
+		6CA7474524C1BF330071B6FE /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7473A24C1BF330071B6FE /* User+CoreDataClass.swift */; };
+		6CA7474624C1BF330071B6FE /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7473A24C1BF330071B6FE /* User+CoreDataClass.swift */; };
+		6CA7474724C1BF330071B6FE /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7473B24C1BF330071B6FE /* User+CoreDataProperties.swift */; };
+		6CA7474824C1BF330071B6FE /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7473B24C1BF330071B6FE /* User+CoreDataProperties.swift */; };
+		6CA7474924C1BF330071B6FE /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7473B24C1BF330071B6FE /* User+CoreDataProperties.swift */; };
+		6CA7474A24C1BF330071B6FE /* Media+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7473C24C1BF330071B6FE /* Media+CoreDataClass.swift */; };
+		6CA7474B24C1BF330071B6FE /* Media+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7473C24C1BF330071B6FE /* Media+CoreDataClass.swift */; };
+		6CA7474C24C1BF330071B6FE /* Media+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7473C24C1BF330071B6FE /* Media+CoreDataClass.swift */; };
+		6CA7474D24C1BF330071B6FE /* Media+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7473D24C1BF330071B6FE /* Media+CoreDataProperties.swift */; };
+		6CA7474E24C1BF330071B6FE /* Media+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7473D24C1BF330071B6FE /* Media+CoreDataProperties.swift */; };
+		6CA7474F24C1BF330071B6FE /* Media+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7473D24C1BF330071B6FE /* Media+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CA7471824C1AD900071B6FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CA746F624C1AD8C0071B6FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CA746FD24C1AD8C0071B6FE;
+			remoteInfo = "Mitesh Practical";
+		};
+		6CA7472324C1AD900071B6FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CA746F624C1AD8C0071B6FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CA746FD24C1AD8C0071B6FE;
+			remoteInfo = "Mitesh Practical";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6C45A53824C1E54F00776A4C /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		6C45A53A24C20F8E00776A4C /* ClassExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassExtensions.swift; sourceTree = "<group>"; };
+		6CA746FE24C1AD8C0071B6FE /* Mitesh Practical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mitesh Practical.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA7470124C1AD8C0071B6FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6CA7470324C1AD8C0071B6FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6CA7470524C1AD8C0071B6FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6CA7470824C1AD8C0071B6FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CA7470B24C1AD8C0071B6FE /* Mitesh_Practical.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mitesh_Practical.xcdatamodel; sourceTree = "<group>"; };
+		6CA7470D24C1AD900071B6FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CA7471024C1AD900071B6FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6CA7471224C1AD900071B6FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CA7471724C1AD900071B6FE /* Mitesh PracticalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mitesh PracticalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA7471B24C1AD900071B6FE /* Mitesh_PracticalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mitesh_PracticalTests.swift; sourceTree = "<group>"; };
+		6CA7471D24C1AD900071B6FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CA7472224C1AD900071B6FE /* Mitesh PracticalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mitesh PracticalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA7472624C1AD900071B6FE /* Mitesh_PracticalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mitesh_PracticalUITests.swift; sourceTree = "<group>"; };
+		6CA7472824C1AD900071B6FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CA7473424C1B8BA0071B6FE /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		6CA7473824C1BF330071B6FE /* Article+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Article+CoreDataClass.swift"; path = "Mitesh Practical/Article+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6CA7473924C1BF330071B6FE /* Article+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Article+CoreDataProperties.swift"; path = "Mitesh Practical/Article+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6CA7473A24C1BF330071B6FE /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataClass.swift"; path = "Mitesh Practical/User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6CA7473B24C1BF330071B6FE /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "Mitesh Practical/User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6CA7473C24C1BF330071B6FE /* Media+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Media+CoreDataClass.swift"; path = "Mitesh Practical/Media+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6CA7473D24C1BF330071B6FE /* Media+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Media+CoreDataProperties.swift"; path = "Mitesh Practical/Media+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CA746FB24C1AD8C0071B6FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA7471424C1AD900071B6FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA7471F24C1AD900071B6FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CA746F524C1AD8C0071B6FE = {
+			isa = PBXGroup;
+			children = (
+				6CA7473824C1BF330071B6FE /* Article+CoreDataClass.swift */,
+				6CA7473924C1BF330071B6FE /* Article+CoreDataProperties.swift */,
+				6CA7473A24C1BF330071B6FE /* User+CoreDataClass.swift */,
+				6CA7473B24C1BF330071B6FE /* User+CoreDataProperties.swift */,
+				6CA7473C24C1BF330071B6FE /* Media+CoreDataClass.swift */,
+				6CA7473D24C1BF330071B6FE /* Media+CoreDataProperties.swift */,
+				6CA7470024C1AD8C0071B6FE /* Mitesh Practical */,
+				6CA7471A24C1AD900071B6FE /* Mitesh PracticalTests */,
+				6CA7472524C1AD900071B6FE /* Mitesh PracticalUITests */,
+				6CA746FF24C1AD8C0071B6FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6CA746FF24C1AD8C0071B6FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CA746FE24C1AD8C0071B6FE /* Mitesh Practical.app */,
+				6CA7471724C1AD900071B6FE /* Mitesh PracticalTests.xctest */,
+				6CA7472224C1AD900071B6FE /* Mitesh PracticalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CA7470024C1AD8C0071B6FE /* Mitesh Practical */ = {
+			isa = PBXGroup;
+			children = (
+				6CA7470124C1AD8C0071B6FE /* AppDelegate.swift */,
+				6CA7470324C1AD8C0071B6FE /* SceneDelegate.swift */,
+				6CA7470524C1AD8C0071B6FE /* ViewController.swift */,
+				6CA7473424C1B8BA0071B6FE /* ArticleViewModel.swift */,
+				6C45A53824C1E54F00776A4C /* ArticleTableViewCell.swift */,
+				6C45A53A24C20F8E00776A4C /* ClassExtensions.swift */,
+				6CA7470724C1AD8C0071B6FE /* Main.storyboard */,
+				6CA7470D24C1AD900071B6FE /* Assets.xcassets */,
+				6CA7470F24C1AD900071B6FE /* LaunchScreen.storyboard */,
+				6CA7471224C1AD900071B6FE /* Info.plist */,
+				6CA7470A24C1AD8C0071B6FE /* Mitesh_Practical.xcdatamodeld */,
+			);
+			path = "Mitesh Practical";
+			sourceTree = "<group>";
+		};
+		6CA7471A24C1AD900071B6FE /* Mitesh PracticalTests */ = {
+			isa = PBXGroup;
+			children = (
+				6CA7471B24C1AD900071B6FE /* Mitesh_PracticalTests.swift */,
+				6CA7471D24C1AD900071B6FE /* Info.plist */,
+			);
+			path = "Mitesh PracticalTests";
+			sourceTree = "<group>";
+		};
+		6CA7472524C1AD900071B6FE /* Mitesh PracticalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6CA7472624C1AD900071B6FE /* Mitesh_PracticalUITests.swift */,
+				6CA7472824C1AD900071B6FE /* Info.plist */,
+			);
+			path = "Mitesh PracticalUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CA746FD24C1AD8C0071B6FE /* Mitesh Practical */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CA7472B24C1AD900071B6FE /* Build configuration list for PBXNativeTarget "Mitesh Practical" */;
+			buildPhases = (
+				6CA746FA24C1AD8C0071B6FE /* Sources */,
+				6CA746FB24C1AD8C0071B6FE /* Frameworks */,
+				6CA746FC24C1AD8C0071B6FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mitesh Practical";
+			productName = "Mitesh Practical";
+			productReference = 6CA746FE24C1AD8C0071B6FE /* Mitesh Practical.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6CA7471624C1AD900071B6FE /* Mitesh PracticalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CA7472E24C1AD900071B6FE /* Build configuration list for PBXNativeTarget "Mitesh PracticalTests" */;
+			buildPhases = (
+				6CA7471324C1AD900071B6FE /* Sources */,
+				6CA7471424C1AD900071B6FE /* Frameworks */,
+				6CA7471524C1AD900071B6FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CA7471924C1AD900071B6FE /* PBXTargetDependency */,
+			);
+			name = "Mitesh PracticalTests";
+			productName = "Mitesh PracticalTests";
+			productReference = 6CA7471724C1AD900071B6FE /* Mitesh PracticalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6CA7472124C1AD900071B6FE /* Mitesh PracticalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CA7473124C1AD900071B6FE /* Build configuration list for PBXNativeTarget "Mitesh PracticalUITests" */;
+			buildPhases = (
+				6CA7471E24C1AD900071B6FE /* Sources */,
+				6CA7471F24C1AD900071B6FE /* Frameworks */,
+				6CA7472024C1AD900071B6FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CA7472424C1AD900071B6FE /* PBXTargetDependency */,
+			);
+			name = "Mitesh PracticalUITests";
+			productName = "Mitesh PracticalUITests";
+			productReference = 6CA7472224C1AD900071B6FE /* Mitesh PracticalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CA746F624C1AD8C0071B6FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Mrs Product";
+				TargetAttributes = {
+					6CA746FD24C1AD8C0071B6FE = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					6CA7471624C1AD900071B6FE = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 6CA746FD24C1AD8C0071B6FE;
+					};
+					6CA7472124C1AD900071B6FE = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 6CA746FD24C1AD8C0071B6FE;
+					};
+				};
+			};
+			buildConfigurationList = 6CA746F924C1AD8C0071B6FE /* Build configuration list for PBXProject "Mitesh Practical" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CA746F524C1AD8C0071B6FE;
+			productRefGroup = 6CA746FF24C1AD8C0071B6FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CA746FD24C1AD8C0071B6FE /* Mitesh Practical */,
+				6CA7471624C1AD900071B6FE /* Mitesh PracticalTests */,
+				6CA7472124C1AD900071B6FE /* Mitesh PracticalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CA746FC24C1AD8C0071B6FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA7471124C1AD900071B6FE /* LaunchScreen.storyboard in Resources */,
+				6CA7470E24C1AD900071B6FE /* Assets.xcassets in Resources */,
+				6CA7470924C1AD8C0071B6FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA7471524C1AD900071B6FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA7472024C1AD900071B6FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CA746FA24C1AD8C0071B6FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA7473E24C1BF330071B6FE /* Article+CoreDataClass.swift in Sources */,
+				6CA7470624C1AD8C0071B6FE /* ViewController.swift in Sources */,
+				6CA7470C24C1AD8C0071B6FE /* Mitesh_Practical.xcdatamodeld in Sources */,
+				6CA7474D24C1BF330071B6FE /* Media+CoreDataProperties.swift in Sources */,
+				6C45A53924C1E54F00776A4C /* ArticleTableViewCell.swift in Sources */,
+				6CA7470224C1AD8C0071B6FE /* AppDelegate.swift in Sources */,
+				6CA7473524C1B8BA0071B6FE /* ArticleViewModel.swift in Sources */,
+				6CA7470424C1AD8C0071B6FE /* SceneDelegate.swift in Sources */,
+				6CA7474424C1BF330071B6FE /* User+CoreDataClass.swift in Sources */,
+				6C45A53B24C20F8E00776A4C /* ClassExtensions.swift in Sources */,
+				6CA7474124C1BF330071B6FE /* Article+CoreDataProperties.swift in Sources */,
+				6CA7474A24C1BF330071B6FE /* Media+CoreDataClass.swift in Sources */,
+				6CA7474724C1BF330071B6FE /* User+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA7471324C1AD900071B6FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA7474B24C1BF330071B6FE /* Media+CoreDataClass.swift in Sources */,
+				6CA7474224C1BF330071B6FE /* Article+CoreDataProperties.swift in Sources */,
+				6CA7473F24C1BF330071B6FE /* Article+CoreDataClass.swift in Sources */,
+				6CA7474824C1BF330071B6FE /* User+CoreDataProperties.swift in Sources */,
+				6CA7474E24C1BF330071B6FE /* Media+CoreDataProperties.swift in Sources */,
+				6CA7471C24C1AD900071B6FE /* Mitesh_PracticalTests.swift in Sources */,
+				6CA7473624C1B8BA0071B6FE /* ArticleViewModel.swift in Sources */,
+				6CA7474524C1BF330071B6FE /* User+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA7471E24C1AD900071B6FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA7474C24C1BF330071B6FE /* Media+CoreDataClass.swift in Sources */,
+				6CA7474324C1BF330071B6FE /* Article+CoreDataProperties.swift in Sources */,
+				6CA7474024C1BF330071B6FE /* Article+CoreDataClass.swift in Sources */,
+				6CA7474924C1BF330071B6FE /* User+CoreDataProperties.swift in Sources */,
+				6CA7474F24C1BF330071B6FE /* Media+CoreDataProperties.swift in Sources */,
+				6CA7472724C1AD900071B6FE /* Mitesh_PracticalUITests.swift in Sources */,
+				6CA7473724C1B8BA0071B6FE /* ArticleViewModel.swift in Sources */,
+				6CA7474624C1BF330071B6FE /* User+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CA7471924C1AD900071B6FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CA746FD24C1AD8C0071B6FE /* Mitesh Practical */;
+			targetProxy = 6CA7471824C1AD900071B6FE /* PBXContainerItemProxy */;
+		};
+		6CA7472424C1AD900071B6FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CA746FD24C1AD8C0071B6FE /* Mitesh Practical */;
+			targetProxy = 6CA7472324C1AD900071B6FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6CA7470724C1AD8C0071B6FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CA7470824C1AD8C0071B6FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6CA7470F24C1AD900071B6FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CA7471024C1AD900071B6FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CA7472924C1AD900071B6FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6CA7472A24C1AD900071B6FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6CA7472C24C1AD900071B6FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mitesh Practical/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mrproduct.Mitesh-Practical";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6CA7472D24C1AD900071B6FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mitesh Practical/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mrproduct.Mitesh-Practical";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6CA7472F24C1AD900071B6FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mitesh PracticalTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mrproduct.Mitesh-PracticalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mitesh Practical.app/Mitesh Practical";
+			};
+			name = Debug;
+		};
+		6CA7473024C1AD900071B6FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mitesh PracticalTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mrproduct.Mitesh-PracticalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mitesh Practical.app/Mitesh Practical";
+			};
+			name = Release;
+		};
+		6CA7473224C1AD900071B6FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mitesh PracticalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mrproduct.Mitesh-PracticalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mitesh Practical";
+			};
+			name = Debug;
+		};
+		6CA7473324C1AD900071B6FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mitesh PracticalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mrproduct.Mitesh-PracticalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mitesh Practical";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CA746F924C1AD8C0071B6FE /* Build configuration list for PBXProject "Mitesh Practical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA7472924C1AD900071B6FE /* Debug */,
+				6CA7472A24C1AD900071B6FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CA7472B24C1AD900071B6FE /* Build configuration list for PBXNativeTarget "Mitesh Practical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA7472C24C1AD900071B6FE /* Debug */,
+				6CA7472D24C1AD900071B6FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CA7472E24C1AD900071B6FE /* Build configuration list for PBXNativeTarget "Mitesh PracticalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA7472F24C1AD900071B6FE /* Debug */,
+				6CA7473024C1AD900071B6FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CA7473124C1AD900071B6FE /* Build configuration list for PBXNativeTarget "Mitesh PracticalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA7473224C1AD900071B6FE /* Debug */,
+				6CA7473324C1AD900071B6FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6CA7470A24C1AD8C0071B6FE /* Mitesh_Practical.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6CA7470B24C1AD8C0071B6FE /* Mitesh_Practical.xcdatamodel */,
+			);
+			currentVersion = 6CA7470B24C1AD8C0071B6FE /* Mitesh_Practical.xcdatamodel */;
+			path = Mitesh_Practical.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6CA746F624C1AD8C0071B6FE /* Project object */;
+}
